@@ -1,14 +1,14 @@
-#Task: Run the game and collide with the obstacle. Observe the screen doesn't flicker. Which line of code is responsible for this?
-
 import pygame
 
 green = (0, 255, 0)
 brown = (110, 38, 14)
 blue = (0, 0, 255)
 
+pygame.init()
 window_width, window_height = 500, 500
 window = pygame.display.set_mode((window_width, window_height))
 pygame.display.set_caption('Maze')
+
 clock = pygame.time.Clock()
 
 obstacles = [
@@ -26,20 +26,29 @@ player_speed = 1
 pygame.font.init()
 font = pygame.font.Font(None, 36)
 
-while True:
-  clock.tick(60)
+running = True
+
+while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
-      pygame.quit()
-      exit()
+      running = False
+  
+  #We add the logic to move the player 
+  #if we press any of the four keys(up, down, right, left).
 
+  #This function returns the keys pressed by the user.
   keys = pygame.key.get_pressed()
+
+  #If you press the right arrow, we will move the player right by 1 pixel.
   if keys[pygame.K_RIGHT]:
     player_x += player_speed
+  #If you press the left arrow, we will move the player left by 1 pixel.
   if keys[pygame.K_LEFT]:
     player_x -= player_speed
+  #If you press the up arrow, we will move the player up by 1 pixel.
   if keys[pygame.K_UP]:
     player_y -= player_speed
+  #If you press the down arrow, we will move the player down by 1 pixel.
   if keys[pygame.K_DOWN]:
     player_y += player_speed
 
@@ -49,20 +58,11 @@ while True:
 
   win = pygame.draw.rect(window, blue, (450, 0, 70, 70))
 
-  for obstacle in obstacles:
-    if player.colliderect(obstacle):
-      game_over_text = font.render('Game Over', True, (255, 0, 0))
-      window.blit(game_over_text, (230, 250))
-      pygame.display.update()
-      pygame.time.delay(2000)  #adding delay
-      pygame.quit()  #to close window after 2 seconds
-      exit()
-
-  if player.colliderect(win):
-    you_win_text = font.render('You Win', True, (0, 255, 0))
-    window.blit(you_win_text, (230, 250))
 
   for object in obstacles:
     pygame.draw.rect(window, brown, object)
-
+  
+  clock.tick(60)
   pygame.display.update()
+
+pygame.quit()
