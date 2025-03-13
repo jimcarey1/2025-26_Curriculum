@@ -1,3 +1,5 @@
+#Task: Change the antialias argument in the line 10 to False and observe the output text.
+
 import pygame
 pygame.init()
 window = pygame.display.set_mode((500, 500))

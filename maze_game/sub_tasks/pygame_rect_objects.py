@@ -1,3 +1,11 @@
+#Task1: Try to draw a rectangle using the Rect object as above. The positioning of the rectangle 
+# should be at the top-left corner of the window.
+#Hint: The top-left corner of the rectangle should be the top-left corner of the window.
+
+#Task2: Try to draw a rectangle using the Rect object as above. The top-right corner of the rectangle 
+#should be the top-right corner of the window and the width of the rectangle should be 100.
+
+
 import pygame
 pygame.init()
 width, height = 500, 500

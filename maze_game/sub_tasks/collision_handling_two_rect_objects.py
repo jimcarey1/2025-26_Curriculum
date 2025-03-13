@@ -1,3 +1,5 @@
+#Task: Keep rect1 fixed and control the rect2 using event handling and then check the collision handling between them.
+
 import pygame
 pygame.init()
 window = pygame.display.set_mode((500, 500))

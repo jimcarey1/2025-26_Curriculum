@@ -1,3 +1,5 @@
+#Task: Extend this program by printing the third and fourth element in the list using Indexing.
+
 list1 = [1, 'a', True, 2.34]
 print(list1) #Output: [1, 'a', True, 2.34]
 '''We are using indexing to access the first element.

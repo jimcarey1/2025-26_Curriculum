@@ -1,3 +1,9 @@
+#Task: Change the code, Add event handling for UP and DOWN arrow keys. If the user presses the UP arrow, increment the y-coordinate by 1. 
+# If the user presses the DOWN arrow, decrement the y-coordinate by 1.
+
+#Hint: rect.y = rect.y + 1 and rect.y = rect.y - 1
+
+
 import pygame
 pygame.init()
 window = pygame.display.set_mode((500, 500))
@@ -13,6 +19,7 @@ while running:
         keys = pygame.key.get_pressed()
         #If the left arrow key is pressed, we move the rect to the left.
         if keys[pygame.K_LEFT]:
+            #rect.x returns the x-coordinate of the rect object.
             #we change the x-coordinate of the rect by -1
             rect.x = rect.x - 1
         #If the right arrow key is pressed, we move the rect to the right.

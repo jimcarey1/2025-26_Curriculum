@@ -1,3 +1,7 @@
+#Task: Add two more rectangles to the obstacles list and observe the output screen. 
+# (Any of the rectangles should not touch each other).
+
+
 import pygame 
 pygame.init()
 window = pygame.display.set_mode((500, 500))

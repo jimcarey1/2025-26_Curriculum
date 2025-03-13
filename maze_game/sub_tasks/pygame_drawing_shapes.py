@@ -1,3 +1,6 @@
+#Task: Change the center of the circle.
+#Task: Change the first two numbers in the rect argument of line 18 and observe the output.
+
 import pygame
 
 pygame.init()
@@ -14,6 +17,3 @@ while True:
     #Here we are drawing a rectangle with top left corner at (50, 50) and width 100, height 100
     pygame.draw.rect(surface=window, color=(0, 255, 0), rect=(50, 50, 100, 100))
     pygame.display.flip()
-
-
-    
