@@ -1,3 +1,5 @@
+#Task: Change the title and background colour of the window.
+
 import pygame
 pygame.init()
 width, height = 500, 500
@@ -11,7 +13,4 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
-    pygame.display.flip()
-
-
-    
+    pygame.display.flip()    

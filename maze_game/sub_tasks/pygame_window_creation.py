@@ -1,5 +1,4 @@
-#Task1: Change the values of width, height and then observe the size of the window.
-#Task2: Change the title and background colour of the window.
+#Task: Change the values of width, height and then observe the size of the window.
 
 import pygame #importing the pygame module
 

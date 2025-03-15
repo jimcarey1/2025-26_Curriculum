@@ -21,6 +21,7 @@ obstacles = [
 ]
 
 player_x, player_y = 0, 450
+player_width, player_height = 50, 50
 player_speed = 1
 
 pygame.font.init()
@@ -35,18 +36,18 @@ while running:
       running = False
 
   keys = pygame.key.get_pressed()
-  if keys[pygame.K_RIGHT]:
+  if keys[pygame.K_RIGHT] and (player_x<window_width-player_width):
     player_x += player_speed
-  if keys[pygame.K_LEFT]:
+  if keys[pygame.K_LEFT] and player_x > 0:
     player_x -= player_speed
-  if keys[pygame.K_UP]:
+  if keys[pygame.K_UP] and player_y > 0:
     player_y -= player_speed
-  if keys[pygame.K_DOWN]:
+  if keys[pygame.K_DOWN] and (player_y<window_width-player_height):
     player_y += player_speed
 
   window.fill((255, 255, 255))
 
-  player = pygame.draw.rect(window, green, (player_x, player_y, 50, 50))
+  player = pygame.draw.rect(window, green, (player_x, player_y, player_width, player_height))
 
   win = pygame.draw.rect(window, blue, (450, 0, 70, 70))
 
