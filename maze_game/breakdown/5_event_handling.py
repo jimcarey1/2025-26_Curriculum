@@ -41,16 +41,16 @@ while running:
 
   #If you press the right arrow, we will move the player right by 1 pixel.
   if keys[pygame.K_RIGHT]:
-    player_x += player_speed
+    player_x = player_x + player_speed
   #If you press the left arrow, we will move the player left by 1 pixel.
   if keys[pygame.K_LEFT]:
-    player_x -= player_speed
+    player_x = player_x + player_speed
   #If you press the up arrow, we will move the player up by 1 pixel.
   if keys[pygame.K_UP]:
-    player_y -= player_speed
+    player_y = player_y - player_speed
   #If you press the down arrow, we will move the player down by 1 pixel.
   if keys[pygame.K_DOWN]:
-    player_y += player_speed
+    player_y = player_y + player_speed
 
   window.fill((255, 255, 255))
 

@@ -1,3 +1,6 @@
+#Task: Modify the code, so that If the user presses space button, The program should quit
+#Hint: pygame.K_SPACE is the space button.
+
 import pygame
 pygame.init()
 window = pygame.display.set_mode((500, 500))
@@ -19,7 +22,3 @@ while running:
             print("Key pressed:", event.key) #prints the key that was pressed.
     pygame.display.update()
 pygame.quit()
-
-
-
-

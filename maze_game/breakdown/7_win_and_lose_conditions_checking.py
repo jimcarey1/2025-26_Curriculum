@@ -37,13 +37,13 @@ while running:
 
   keys = pygame.key.get_pressed()
   if keys[pygame.K_RIGHT] and (player_x<window_width-player_width):
-    player_x += player_speed
+    player_x = player_x + player_speed
   if keys[pygame.K_LEFT] and player_x > 0:
-    player_x -= player_speed
+    player_x = player_x - player_speed
   if keys[pygame.K_UP] and player_y > 0:
-    player_y -= player_speed
+    player_y = player_y - player_speed
   if keys[pygame.K_DOWN] and (player_y<window_width-player_height):
-    player_y += player_speed
+    player_y = player_y + player_speed
 
   window.fill((255, 255, 255))
 
