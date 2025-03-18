@@ -8,7 +8,7 @@ from pygame.locals import *
 window_width = 600
 window_height = 499
 
-current_path = pathlib.Path().absolute()
+current_path = pathlib.Path(__file__).parent
 
 
 # set height and width of window 

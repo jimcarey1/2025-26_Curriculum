@@ -17,8 +17,8 @@ paddle_speed = 10
 
 # Bricks
 brick_rows = 5
-brick_cols = 10
-brick_width = 75
+brick_cols = 9
+brick_width = 78
 brick_height = 20
 brick_padding = 10
 bricks = []
