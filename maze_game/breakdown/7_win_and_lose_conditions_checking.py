@@ -51,6 +51,9 @@ while running:
 
   win = pygame.draw.rect(window, blue, (450, 0, 70, 70))
 
+  for object in obstacles:
+    pygame.draw.rect(window, brown, object)
+
   #This is for checking the losing status.
   #We use for loop to check, if our player collides with any of the obstacles.
   for obstacle in obstacles:
