@@ -10,7 +10,6 @@ window = pygame.display.set_mode((window_width, window_height))
 window.fill((255, 255, 255))
 pygame.display.set_caption('Maze')
 
-clock = pygame.time.Clock()
 
 obstacles = [
     pygame.Rect(0, 0, 400, 50),
@@ -52,7 +51,6 @@ while running:
   for object in obstacles:
     pygame.draw.rect(window, brown, object)
 
-  clock.tick(60)
   pygame.display.update()
 
 pygame.quit()

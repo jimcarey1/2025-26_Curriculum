@@ -20,6 +20,6 @@ while running:
         #font.render() returns a Surface object.
         #We blit this Surface object to the window using blit method.
         window.blit(source=text, dest=(100, 100))
-        pygame.display.flip()
+        pygame.display.update()
 pygame.quit()
 

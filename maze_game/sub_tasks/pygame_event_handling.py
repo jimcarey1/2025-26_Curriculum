@@ -5,8 +5,10 @@ import pygame
 pygame.init()
 window = pygame.display.set_mode((500, 500))
 pygame.display.set_caption("Event Handling")
+clock = pygame.time.Clock()
 running = True
 while running:
+    clock.tick(60)
     #pygame.event.get() returns a list of all the events 
     # that have occurred since the last time it was called.
     for event in pygame.event.get():

@@ -19,7 +19,7 @@ while True:
     rect = pygame.Rect(0, 50, 100, 150)
     #Here we are drawing a rectangle with top left corner at (0, 50) and width 100, height 150
     pygame.draw.rect(window, (0, 255, 0), rect)
-    pygame.display.flip()
+    pygame.display.update()
 
 
     

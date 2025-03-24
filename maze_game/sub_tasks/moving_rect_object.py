@@ -8,10 +8,12 @@ import pygame
 pygame.init()
 window = pygame.display.set_mode((500, 500))
 pygame.display.set_caption("Moving Rect Object")
+clock = pygame.time.Clock()
 #creating a rect object
 rect = pygame.Rect(0, 0, 50, 50)
 running = True
 while running:
+    clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
