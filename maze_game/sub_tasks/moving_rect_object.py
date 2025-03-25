@@ -1,5 +1,5 @@
-#Task: Change the code, Add event handling for UP and DOWN arrow keys. If the user presses the UP arrow, increment the y-coordinate by 1. 
-# If the user presses the DOWN arrow, decrement the y-coordinate by 1.
+#Task: Change the code, Add event handling for UP and DOWN arrow keys. If the user presses the UP arrow, decrement the y-coordinate by 1. 
+# If the user presses the DOWN arrow, increment the y-coordinate by 1.
 
 #Hint: rect.y = rect.y + 1 and rect.y = rect.y - 1
 

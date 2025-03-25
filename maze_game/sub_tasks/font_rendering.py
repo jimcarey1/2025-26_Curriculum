@@ -1,5 +1,5 @@
-#Task: Change the second argument in the font.render() in the line 10 to False and observe the output text.
-#Explain what is the significance of "dest" argument in blit function in line 22.(Theory question) 
+#Task: Change the second argument in the font.render() to False and observe the output text.
+#Explain what is the significance of "dest" argument in blit function.(Theory question) 
 
 import pygame
 pygame.init()
