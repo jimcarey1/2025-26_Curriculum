@@ -1,3 +1,5 @@
+#Task: Create a list containing only integer elements. Using for loop, calculate the sum of all elements.
+
 #we created a list named list1.
 list1 = [1, 2, 3, 4, 5]
 

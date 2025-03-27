@@ -1,3 +1,5 @@
+
+
 thislist = ["apple", "banana", "cherry"]
 
 #calculate the length of the list.

@@ -1,5 +1,4 @@
-#Task: Change the first two numbers in the rect argument of line 18 and observe the output.
-
+#Task: Change the first two numbers in the rect argument in the function pygame.draw.rect and observe the relative change in output.
 import pygame
 
 pygame.init()
